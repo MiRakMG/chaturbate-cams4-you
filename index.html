@@ -41,17 +41,21 @@
     </div>
 
     <button id="menuBtn" type="button" aria-controls="sidebar" aria-expanded="false"
-        class="cursor-pointer fixed top-24 left-0 bg-gay rounded-tr-lg rounded-br-lg">
+        class="cursor-pointer fixed top-24 left-0 bg-gay rounded-tr-lg rounded-br-lg z-50">
         <iconify-icon icon="jam:menu" class="text-white text-3xl"></iconify-icon>
     </button>
 
-    <div class="p-5 flex-1 w-full flex gap-x-3 pt-24">
+    <div class="p-5 flex-1 w-full flex gap-x-3 pt-24 relative">
+
         <aside id="sidebar"
-            class="bg-white w-72 -ml-5 lg:ml-0 lg:w-52 rounded-xl py-3 px-5 lg:px-2 fixed top-36 bottom-0 hidden z-50 flex-col gap-y-8 overflow-auto  hide-scrollbar">
+            class="bg-white w-72 -ml-5 lg:ml-0 lg:w-52 rounded-xl py-3 px-5 lg:px-2 fixed top-36 bottom-0 hidden z-50 flex-col gap-y-8 overflow-auto hide-scrollbar">
+
             <!-- Menus Section -->
-            <section class="flex flex-col gap-y-0.5">
+            <section class="flex flex-col gap-y-0.5 relative">
+
                 <button class="background w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg"><iconify-icon
                         icon="fa7-solid:home" class=" text-lg"></iconify-icon>Home</button>
+
                 <button
                     class="w-full flex justify-baseline gap-x-3 p-2 text-black rounded-lg hover:text-white hover:bg-[linear-gradient(118deg,rgba(93,212,255,1)_0%,rgba(255,49,234,1)_100%)] cursor-pointer"><iconify-icon
                         icon="weui:discover-filled" class=" text-lg"></iconify-icon>Discover</button>
