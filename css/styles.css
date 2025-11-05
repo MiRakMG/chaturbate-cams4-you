@@ -19,3 +19,7 @@ html, body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+select {
+  background-color: #333333 !important;
+}
