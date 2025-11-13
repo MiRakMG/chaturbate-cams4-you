@@ -5,10 +5,6 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-.background {
-  background: linear-gradient(91.79deg, #ff2727 -2.62%, #991818 102.76%);
-}
-
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
