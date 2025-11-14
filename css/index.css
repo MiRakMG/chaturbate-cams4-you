@@ -27,8 +27,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
@@ -358,12 +356,6 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-48 {
-    height: calc(var(--spacing) * 48);
-  }
-  .h-52 {
-    height: calc(var(--spacing) * 52);
-  }
   .h-90 {
     height: var(--spacing-90);
   }
@@ -372,9 +364,6 @@
   }
   .h-\[3px\] {
     height: 3px;
-  }
-  .h-fit {
-    height: fit-content;
   }
   .h-full {
     height: 100%;
@@ -415,6 +404,9 @@
   .w-\[30\%\] {
     width: 30%;
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-full {
     width: 100%;
   }
@@ -423,9 +415,6 @@
   }
   .flex-shrink {
     flex-shrink: 1;
-  }
-  .flex-shrink-0 {
-    flex-shrink: 0;
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -1115,16 +1104,6 @@
       margin-right: calc(var(--spacing) * 80);
     }
   }
-  .lg\:mr-\[10\%\] {
-    @media (width >= 64rem) {
-      margin-right: 10%;
-    }
-  }
-  .lg\:mr-\[320px\] {
-    @media (width >= 64rem) {
-      margin-right: 320px;
-    }
-  }
   .lg\:ml-0 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 0);
@@ -1145,16 +1124,6 @@
       display: none;
     }
   }
-  .lg\:h-\[30\%\] {
-    @media (width >= 64rem) {
-      height: 30%;
-    }
-  }
-  .lg\:h-\[50\%\] {
-    @media (width >= 64rem) {
-      height: 50%;
-    }
-  }
   .lg\:max-h-\[calc\(100vh-10rem\)\] {
     @media (width >= 64rem) {
       max-height: calc(100vh - 10rem);
@@ -1165,19 +1134,14 @@
       width: calc(var(--spacing) * 56);
     }
   }
-  .lg\:w-\[20\%\] {
-    @media (width >= 64rem) {
-      width: 20%;
-    }
-  }
   .lg\:w-\[300px\] {
     @media (width >= 64rem) {
       width: 300px;
     }
   }
-  .lg\:w-\[350px\] {
+  .lg\:w-full {
     @media (width >= 64rem) {
-      width: 350px;
+      width: 100%;
     }
   }
   .lg\:grid-cols-\[repeat\(auto-fill\,minmax\(278px\,1fr\)\)\] {
@@ -1185,9 +1149,24 @@
       grid-template-columns: repeat(auto-fill,minmax(278px,1fr));
     }
   }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:flex-nowrap {
+    @media (width >= 64rem) {
+      flex-wrap: nowrap;
+    }
+  }
+  .lg\:justify-baseline {
+    @media (width >= 64rem) {
+      justify-content: baseline;
     }
   }
   .lg\:px-2 {
